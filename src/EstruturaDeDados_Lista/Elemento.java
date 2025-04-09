@@ -1,4 +1,4 @@
-package EstruturaDeDados;
+package EstruturaDeDados_Lista;
 
 public class Elemento {
     private String valor;

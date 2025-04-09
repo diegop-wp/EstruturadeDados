@@ -1,4 +1,4 @@
-package EstruturaDeDados;
+package EstruturaDeDados_Lista;
 
 public class Programa {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package EstruturaDeDados;
+package EstruturaDeDados_Lista;
 
 public class ListaEncadeada {
     private Elemento primeiro;
