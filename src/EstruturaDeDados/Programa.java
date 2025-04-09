@@ -15,6 +15,6 @@ public class Programa {
     System.out.println("Primeiro: " + lista.getPrimeiro().getValor());
     System.out.println("Ultimo: " + lista.getUltimo().getValor());
 
-        System.out.println("Voce pegou "+ lista.get(2).getValor());
+        System.out.println("Você buscou "+ lista.get(2).getValor());
     }
 }
