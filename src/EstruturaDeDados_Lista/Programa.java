@@ -15,6 +15,26 @@ public class Programa {
     System.out.println("Primeiro: " + lista.getPrimeiro().getValor());
     System.out.println("Ultimo: " + lista.getUltimo().getValor());
 
-        System.out.println("Você buscou "+ lista.get(2).getValor());
+        System.out.println("---Lista---");
+        for (int i = 0; i < lista.getTamanho(); i++) {
+            System.out.println(lista.get(i).getValor());
+        }
+
+        // remover
+        lista.remover("AM");
+        lista.remover("CF");
+        lista.remover("SP");
+        lista.remover("RJ");
+        lista.remover("BH");
+        lista.remover("TF");
+        lista.adicionar("SLA");
+
+        System.out.println("---Lista atualizada---");
+        for (int i = 0; i < lista.getTamanho(); i++) {
+            System.out.println(lista.get(i).getValor());
+        }
+
+
+
     }
 }
