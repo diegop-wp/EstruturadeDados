@@ -5,6 +5,6 @@ Este repositório contém implementações de diferentes **estruturas de dados**
 ## 📂 Estruturas Implementadas
 
 ✅ **Lista Encadeada**  
-✅ **Arrays** *(Em desenvolvimento...)*  
+✅ **Arrays** 
 🔜 **Pilhas** *(Em breve...)*  
 🔜 **Filas** *(Em breve...)*  
