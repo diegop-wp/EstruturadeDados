@@ -2,7 +2,7 @@ package EstruturaDeDados_Lista;
 
 public class Programa {
     public static void main(String[] args) {
-        ListaEncadeada lista = new ListaEncadeada();
+        ListaEncadeada <String> lista = new <String> ListaEncadeada();
 
         lista.adicionar("AM");
         lista.adicionar("CF");
@@ -28,6 +28,7 @@ public class Programa {
         lista.remover("BH");
         lista.remover("TF");
         lista.adicionar("SLA");
+        lista.remover("SLA");
 
         System.out.println("---Lista atualizada---");
         for (int i = 0; i < lista.getTamanho(); i++) {

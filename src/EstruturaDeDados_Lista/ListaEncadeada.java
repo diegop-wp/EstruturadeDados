@@ -1,19 +1,19 @@
 package EstruturaDeDados_Lista;
 
-public class ListaEncadeada {
-    private Elemento primeiro;
-    private Elemento ultimo;
+public class ListaEncadeada <TIPO> {
+    private Elemento <TIPO> primeiro;
+    private Elemento <TIPO> ultimo;
     private int tamanho;
 
     public ListaEncadeada() {
         this.tamanho = 0;
     }
 
-    public Elemento getPrimeiro() {
+    public Elemento <TIPO> getPrimeiro() {
         return primeiro;
     }
 
-    public void setPrimeiro(Elemento primeiro) {
+    public void setPrimeiro(Elemento <TIPO> primeiro) {
         this.primeiro = primeiro;
     }
 
@@ -25,16 +25,16 @@ public class ListaEncadeada {
         this.tamanho = tamanho;
     }
 
-    public Elemento getUltimo() {
+    public Elemento <TIPO> getUltimo() {
         return ultimo;
     }
 
-    public void setUltimo(Elemento ultimo) {
+    public void setUltimo(Elemento <TIPO> ultimo) {
         this.ultimo = ultimo;
     }
 
-    public void adicionar(String novoValor) {
-        Elemento novoElemento = new Elemento(novoValor);
+    public void adicionar(TIPO novoValor) {
+        Elemento <TIPO> novoElemento = new Elemento <TIPO> (novoValor);
         if (this.primeiro == null && this.ultimo == null) {
             this.primeiro = novoElemento;
             this.ultimo = novoElemento;
@@ -51,7 +51,7 @@ public class ListaEncadeada {
         Elemento atual = this.primeiro;
         Elemento anterior = null;
         for (int i = 0; i < this.getTamanho(); i++) {
-            if (atual.getValor().equalsIgnoreCase(valorProcurado)) {
+            if (atual.getValor().equals(valorProcurado)) {
                 if (this.tamanho == 1){
                     this.primeiro = null;
                     this.ultimo = null;
@@ -83,4 +83,10 @@ public class ListaEncadeada {
         }
         return atual;
     }
+
+    public IteratorListaLigada<TIPO> getIterator(){
+        return new IteratorListaLigada<TIPO>(this.primeiro);
+    }
+
+
 }
