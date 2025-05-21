@@ -9,7 +9,7 @@ public class Comparacao {
 
         ArrayList<Integer> vetor = new ArrayList<Integer>();
         
-        int limite =1000000;
+        int limite =100000;
         long tempoInicial = System.currentTimeMillis();
         long tempoFinal;
 
