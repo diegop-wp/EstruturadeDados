@@ -1,8 +1,8 @@
-package buscarlienar;
+package busca;
 
 import java.util.Scanner;
 
-public class BuscarLinear {
+public class BuscaLinear {
     public static void main(String[] args) {
         int[] vetor = new int[8];
 
