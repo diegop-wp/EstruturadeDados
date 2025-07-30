@@ -27,3 +27,8 @@ public class Hashmap {
         System.out.println("Tempo de Execução: "+(endTime - starttime)+ "ms");
     }
 }
+
+// put(key, value) = Adiciona ou substitui o par chave-valor no mapa
+// get(key) = Retorna o valor associado à chave, ou null se não existir
+// remove(key) = Remove o par com a chave especificada
+// containsKey(key) = Verifica se a chave existe no mapa
